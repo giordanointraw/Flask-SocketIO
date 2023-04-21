@@ -15,4 +15,5 @@ python-engineio
 python-socketio
 six==1.11.0
 Werkzeug==2.2.3
+uwsgi
 zipp==3.8.1
