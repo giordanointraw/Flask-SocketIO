@@ -12,7 +12,7 @@
 			// sending a connect request to the server.
 			//var socket = io.connect('https://flask-socketio-production.up.railway.app');
 			//var socket = io.connect('ws://localhost:5000', {transports: ['websocket']});
-			 var socket = io();
+			 var socket = io.connect('flask-socketio-production.up.railway.app');
 			 socket.on('connect', function() {
 				socket.emit('my event', {data: 'I\'m connected!'});
 			 });
