@@ -12,7 +12,10 @@
 			// sending a connect request to the server.
 			//var socket = io.connect('https://flask-socketio-production.up.railway.app');
 			//var socket = io.connect('ws://localhost:5000', {transports: ['websocket']});
-
+			 var socket = io();
+			 socket.on('connect', function() {
+				socket.emit('my event', {data: 'I\'m connected!'});
+			 });
 			// An event handler for a change of value 
 			$('input.sync').on('input', function(event) {
                 socket.emit('Slider value changed', {who: $(this).attr('id'), data: $(this).val()});
