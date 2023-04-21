@@ -26,6 +26,10 @@
             	console.log('Slider value updated');
                 $('#'+msg.who).val(msg.data);
             });
+		socket.on('Slider value changed', function(msg) {
+            	console.log('Slider value updated');
+                $('#'+msg.who).val(msg.data);
+            });
 		});
 	</script>
 </head>
