@@ -1,7 +1,7 @@
 Flask==2.2.1
 gunicorn==20.1.0
 Flask-SocketIO
-eventlet==0.30.2
+eventlet
 gevent-websocket
 Jinja2==3.1.2
 python-engineio
