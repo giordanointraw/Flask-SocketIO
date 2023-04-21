@@ -11,7 +11,7 @@
 
 			// sending a connect request to the server.
 			//var socket = io.connect('https://flask-socketio-production.up.railway.app');
-			var socket = io('ws://flask-socketio-production.up.railway.app', {transports: ['websocket']});
+			var socket = io('wss://flask-socketio-production.up.railway.app', {transports: ['websocket']});
 
 			// An event handler for a change of value 
 			$('input.sync').on('input', function(event) {
