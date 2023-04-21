@@ -1,1 +1,1 @@
-web: gunicorn -k gevent --timeout 600 app:app
+web: python app.py
